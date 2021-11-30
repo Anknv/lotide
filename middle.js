@@ -3,7 +3,8 @@ const middle = function(array) {
   if (array.length <= 2) {
     return [];
   } else if (array.length % 2 === 1) {
-    newArray.push(Math.floor(array.length / 2));
+    const middleIndex = Math.floor(array.length / 2)
+    newArray.push(array[middleIndex]);
     return newArray;
   } else {
     const firstIndex = array.length / 2 - 1;
