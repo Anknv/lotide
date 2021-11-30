@@ -1,20 +1,3 @@
-const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.length !== arrTwo.length) {
-    return false;
-  } else {
-    for (let i = 0; i < arrOne.length; i++) {
-      if (arrOne[i] !== arrTwo[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
-
-const assertArraysEqual = function(arrOne, arrTwo) {
-  console.log(eqArrays(arrOne, arrTwo) ? '✅✅✅' : '❌❌❌');
-};
-
 const middle = function(array) {
   const newArray = [];
   if (array.length <= 2) {
@@ -30,8 +13,4 @@ const middle = function(array) {
   }
 };
 
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-
+module.exports = middle;
